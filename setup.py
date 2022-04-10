@@ -6,7 +6,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="r2server",
-    version="0.0.1",
+    version="0.0.5",
     author="Lukáš Plevač",
     author_email="lukasplevac@gmail.com",
     description="python SDK for R2SERVER",
