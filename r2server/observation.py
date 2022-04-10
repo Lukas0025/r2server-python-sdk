@@ -18,10 +18,10 @@ class observation:
         self.start                   = datetime.fromtimestamp(dict_observation["start"] / 1000)
         self.end                     = datetime.fromtimestamp(dict_observation["end"]   / 1000)
         self.sampleRate              = dict_observation["sampleRate"]
-        self.inputSampleRate         = dict_observation["inputSampleRate"]
-        self.frequency               = dict_observation["frequency"]
+        self.inputSampleRate         = dict_observation["sampleRate"]
+        self.frequency               = dict_observation["actualFrequency"]
         self.actualFrequency         = dict_observation["actualFrequency"]
-        self.bandwidth               = dict_observation["bandwidth"]
+        self.bandwidth               = "0"
         self.tle                     = tle(dict_observation["tle"])
         self.numberOfDecodedPackets  = dict_observation["numberOfDecodedPackets"]
         self.gain                    = dict_observation["gain"]
