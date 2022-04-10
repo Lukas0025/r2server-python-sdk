@@ -13,7 +13,7 @@ class api:
     # @param string   addr     - address of r2cloud server
     # @param string   version  - version of r2cloud api (default: v1)
     # @param mixed    verify   - verify ssl cert of server (default: False) more read from httpx.get parameter verify
-    def __init__(self, addr = 'https://leosatdata.com/api/v1', version = 'v1', verify = True):
+    def __init__(self, addr = 'https://leosatdata.com/', version = 'v1', verify = True):
         self.protocol = protocol(addr, version, verify)            
 
     
